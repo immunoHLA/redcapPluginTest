@@ -1,6 +1,4 @@
 <?php
-// Call the REDCap Connect file in the main "redcap" directory
-require_once "../redcap_connect.php";
 
 ## Your custom PHP code goes here. You may use any constants/variables listed in redcap_info().
 
