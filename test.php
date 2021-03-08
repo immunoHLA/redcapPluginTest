@@ -15,7 +15,7 @@ define("NOAUTH", true);
 require_once"/var/www/html/redcap/redcap_connect.php";
 
 ## Your custom PHP code goes here.
-
+<html>
 <h1>"Pré-traitement du fichier de typage NGS avant import"</h1>
 
 <label for="typageNGS">Quel fichier voulez-vous ajouter ?</label>
@@ -23,5 +23,5 @@ require_once"/var/www/html/redcap/redcap_connect.php";
 <input type="file"
        id="typageNGS" name="typageNGS"
        accept="file/csv">
-
+</html>
 ?>
