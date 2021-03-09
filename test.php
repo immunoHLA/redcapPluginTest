@@ -23,9 +23,8 @@ require_once APP_PATH_DOCROOT.'ProjectGeneral/header.php';
 ?>
 
 <h1 style="color:#800000;">Pré-traitement du fichier de typage NGS avant import</h1>
-
-<label for="typageNGS">Quel fichier voulez-vous ajouter, <?php> echo USERID ?>?</label>
-
+<p>Quel fichier voulez-vous ajouter<?php> echo USERID ?>?</p>
+<br>
 <input type="file"
        id="typageNGS" name="typageNGS"
        accept="file/csv">
