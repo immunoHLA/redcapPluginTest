@@ -25,10 +25,18 @@ require_once APP_PATH_DOCROOT.'ProjectGeneral/header.php';
 <h1 style="color:#800000;">Pré-traitement du fichier de typage NGS avant import</h1>
 <p>Quel fichier voulez-vous ajouter<?php> echo USERID ?>?</p>
 <br>
-<input type="file"
-       id="typageNGS" name="typageNGS"
-       accept="file/csv">
+<form method="POST">
+<button class="btn-href" name="submit">Link</button>
+</form>
+ 
 <?php
+
+if(isset($_POST['submit'])){
+
+$command = escapeshellcmd('./test.py');
+$output = shell_exec($command);
+echo $output;
+}
        
 // OPTIONAL: Display the project footer
 require_once APP_PATH_DOCROOT.'ProjectGeneral/footer.php';
